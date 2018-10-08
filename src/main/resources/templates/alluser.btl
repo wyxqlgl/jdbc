@@ -1,0 +1,4 @@
+<div >${user.id}</div>
+<div>${user.name}</div>
+<div>${user.department_id}</div>
+<div>${user.create_time}</div>

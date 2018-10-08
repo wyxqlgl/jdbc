@@ -1,0 +1,7 @@
+<div>${a}</div>
+<form action="/updateuser" method="post">
+<div>姓名： <input type="text" name="name"></input></div>
+<div>id: <input type="text" name="id"/></div>
+<div>department_id :<input type="text" name="department_id"/></div>
+<input type="submit" value="更新"/>
+</form>

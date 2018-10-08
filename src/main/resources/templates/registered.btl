@@ -1,0 +1,11 @@
+<form>
+    <div>
+        <div><span style=" text-align:center">用户注册</span></div>
+        <div>用户名称： <input type="text" name="username"/></div>
+        <div>用户密码：<input type="text" name="password"/></div>
+        <div>邮箱：<input type="text" name="email"/></div>
+        <div>手机号：<input type="text" name="phononum"/></div>
+        <div>所在地址：<input type="text" name="address"/></div>
+        <div><input type="submit" value="确认注册"/></div>
+    </div>
+</form>
