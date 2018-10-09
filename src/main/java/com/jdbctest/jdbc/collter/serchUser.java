@@ -29,7 +29,7 @@ public class serchUser extends EntityManager{
         view.addObject("list",query.getList());
         EntityManager entityManager;
         Query en=entityManager.createNativeQuery();
-        en.set
+        en.setFirstResult(1);
         return  view;
     }
 //    @RequestMapping("/gotofrist")
