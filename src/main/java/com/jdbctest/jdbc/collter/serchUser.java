@@ -16,7 +16,7 @@ import javax.persistence.Query;
 import java.util.List;
 
 @Controller
-public class serchUser extends EntityManager{
+public class serchUser {
     @Autowired
     userdao userdao;
     @Autowired
@@ -25,11 +25,11 @@ public class serchUser extends EntityManager{
     public ModelAndView goToFrist(){
         ModelAndView view=new ModelAndView("/entersys.btl");
         PageQuery query = new PageQuery();
-       sqlManager.pageQuery("user.selectuser",User.class,query);
+        sqlManager.pageQuery("user.selectuser",User.class,query);
         view.addObject("list",query.getList());
         EntityManager entityManager;
-        Query en=entityManager.createNativeQuery();
-        en.setFirstResult(1);
+
+
         return  view;
     }
 //    @RequestMapping("/gotofrist")
