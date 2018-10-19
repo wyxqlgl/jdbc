@@ -10,20 +10,18 @@ import javax.persistence.GenerationType;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
-@Entity
+
 public class User {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column
+
     private String username;
-    @Column
+
     private String password;
-    @Email
-    @Column
+     @Email
     private String email;
-    @Column
+
     private Date createtime;
-    @Column
+
     private Integer phononum;
 
     public int getId() {
